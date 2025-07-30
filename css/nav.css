@@ -1,0 +1,122 @@
+
+                 /* Navigation Bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  z-index: 9999;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hidden-navbar {
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+}
+
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 80px;
+}
+
+.navbar ul li{
+    font-size: 14px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    transition: font-size 0.4s;
+}
+
+.navbar ul li a:hover{
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.Smartify-logo-navbar{
+    width: 30px;
+}
+
+.Settings-Image-navbar{
+    width: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 992px) and (min-width:601px){
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 12px;
+    width: 93.5%;
+    position: fixed;
+    top: 10px;
+    left: 12px;
+    opacity: 0.9;
+    z-index: 9999;
+}
+
+.settings-image-nav{
+    width: 75px;
+    cursor: pointer;
+}
+   
+}
+
+@media (max-width: 600px) {
+  .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 12px;
+    position: fixed;
+    width: 90%;
+    top: 10px;
+    left: 12px;
+    opacity: 0.9;
+    z-index: 9999;
+}
+
+  ul{
+    display: flex;
+    gap: 0px;
+    list-style: none;
+}
+
+  .navbar ul li a{
+    display: none;
+}
+
+  .logo-image-nav{
+    width: 60px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+  .settings-image-nav{
+    width: 60px;
+    cursor: pointer;
+}
+}

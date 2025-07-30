@@ -1,0 +1,115 @@
+                /* section3 (details)*/
+#section3{
+  width: 98.5%;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;  
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+  background-color: rgb(227, 227, 227);
+}
+
+.section2-description{
+  font-size: 70px;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 5px grey;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.feature{
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 12px;
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  animation: BlurryScroll both;
+  animation-timeline: view(25% 15%);
+  font-size: 18px;
+}
+
+
+@keyframes BlurryScroll{
+  0%{
+    filter: blur(10px);
+    scale: 0.7;
+  }
+  50%{
+    filter: blur(0);
+  }
+  100%{
+    filter: blur(10px);
+  }
+}
+
+#section3 div span{
+  font-size: 36px !important;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  #section3{
+  width: 98.5%;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;  
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+  background: linear-gradient(gainsboro, grey,rgb(71, 71, 71), grey, gainsboro);
+}
+
+.section2-description{
+  font-size: 70px;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 5px grey;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.feature{
+  background-color: rgb(76, 76, 76);
+  border-radius: 10px;
+  padding: 12px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  animation: BlurryScroll both;
+  animation-timeline: view(25% 15%);
+  font-size: 22px;
+}
+
+
+@keyframes BlurryScroll{
+  0%{
+    filter: blur(10px);
+    scale: 0.7;
+  }
+  50%{
+    filter: blur(0);
+  }
+  100%{
+    filter: blur(10px);
+  }
+}
+
+#section3 div span{
+  font-size: 36px !important;
+}
+}

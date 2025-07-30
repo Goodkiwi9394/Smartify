@@ -1,0 +1,134 @@
+.timeline-container {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+}
+
+.section5-description{
+  font-size: 70px;
+  text-align: center;
+  margin-top: 50px;
+  filter: drop-shadow(0 10px 5px grey);
+}
+
+.nav-btn {
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  user-select: none;
+}
+
+.timeline-wrapper {
+  overflow: hidden;
+  flex: 1;
+  position: relative;
+  align-self: center;
+}
+
+.timeline {
+  display: flex;
+  transition: transform 0.3s ease;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.timeline.dragging {
+  cursor: grabbing;
+  user-select: none;
+}
+
+.timeline::-webkit-scrollbar {
+  display: none;
+}
+
+.step {
+  min-width: calc(50vw - 40px); /* Half of viewport width minus some gap */
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: white;
+  border: 6px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.step:nth-child(1) .circle { 
+  border-color: black; 
+  color: black; 
+}
+
+.step:nth-child(2) .circle { 
+  border-color: black; 
+  color: black; 
+}
+
+.step:nth-child(3) .circle { 
+  border-color: black; 
+  color: black; 
+}
+
+.step:nth-child(4) .circle { 
+  border-color: black; 
+  color: black; 
+}
+
+.step:nth-child(5) .circle { 
+  border-color: black; 
+  color: black; 
+}
+
+.step:nth-child(6) .circle { 
+  border-color: black; 
+  color: black; 
+}
+
+.step:nth-child(7) .circle { 
+  border-color: black; 
+  color: black; 
+}
+
+.step:nth-child(8) .circle { 
+  border-color: black; 
+  color: black; 
+}
+
+
+.box {
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+}
+
+.purple { background-color: white; }
+.blue   { background-color: white; }
+.teal   { background-color: white; }
+.yellow { background-color: white; }
+.orange { background-color: white }
+
+.line{
+  width: 750px;
+  height: 4px;
+  background-color: black;
+  position: absolute;
+  right: 0;
+  top: 45px;
+  z-index: -200;
+}
